@@ -1,0 +1,21 @@
+<div class="container">
+    <nav>
+        <button type="button" (click)="toggle()">Toggle Open/Close</button>
+    </nav>
+
+    <div class="test">
+        <div>test</div>
+        <div>test</div>
+        <div>test</div>
+        <div>test</div>
+        <div>test</div>
+        <div>test</div>
+        <div>test</div>
+        <div>test</div>
+    </div>
+
+    <div class="open-close-container" #animationTarget>
+        <p>The box is now {{ isOpen ? 'open' : 'close' }}!</p>
+    </div>
+
+</div>
