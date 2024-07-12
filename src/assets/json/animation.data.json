@@ -1,0 +1,24 @@
+{
+    "animation_keys": [
+        "open", "close"
+    ],
+    "animation_definition": {
+        "open": {
+            "style": {
+                "height" : "200px",
+                "opacity" : 1,
+                "backgroundColor": "blue"
+            },
+            "time" : 1
+        },
+
+        "close": {
+            "style": {
+                "height": "100px",
+                "backgroundColor": "transparent",
+                "backdropFilter": "blur(60px)"
+            },
+            "time" : 0.5
+        }
+    }
+}
