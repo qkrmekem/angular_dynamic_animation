@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterOutlet } from '@angular/router';
 import { ReusableAnimationTestComponent } from './reusable-animation-test/reusable-animation-test.component';
+import { DynamicDimensionComponent } from './dynamic-dimension/dynamic-dimension.component';
 
 export const customAnimation = {
   'openClose': trigger('openClose', [
@@ -33,7 +34,7 @@ export const customAnimation = {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ReusableAnimationTestComponent],
+  imports: [RouterOutlet, ReusableAnimationTestComponent, DynamicDimensionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [

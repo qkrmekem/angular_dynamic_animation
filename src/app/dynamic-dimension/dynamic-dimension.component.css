@@ -1,0 +1,38 @@
+.dynamic-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: bisque;
+}
+
+.adjustable-element{
+    position: relative;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+.adjustable-child-container{
+    background-color: orange;
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    /* vertical-align: middle; */
+}
+
+.adjustable-second-element{
+    flex: 1;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.resize-handle{
+    background-color: #b8ccdb;
+    border: none;
+    cursor: col-resize;
+    transition: background-color 0.3s;
+    width: 1px;
+}
+
+.resize-handle:hover {
+    background-color: #98a8b7;
+}

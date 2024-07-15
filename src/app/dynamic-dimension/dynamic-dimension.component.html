@@ -1,0 +1,11 @@
+<div class="dynamic-container">
+    <div class="adjustable-element" [style.width.px]="dynamicWidth" 
+    [style.height.px]="dynamicWidth" (mousedown)="onResizeStart($event)">
+        <div class="adjustable-child-container"><p>test container</p></div>
+    </div>
+    <button class="resize-handle" (mousedown)="onResizeStart($event)"
+    matTooltip="Faites glisser pour redimensionner"></button>
+    <div class="adjustable-second-element" [style.width]="getOtherDivWidth()">
+
+    </div>
+</div>
