@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xl-4" style="position: relative; left: 33%; margin-top: 2%;">
+        @if (car) {
+            <h1>Your Selected Car: <strong>{{car}}</strong></h1>
+        }
+    </div>
+    
+    <div class="col-xl-12" style="margin-top: 5%;">
+        <app-autocomplete (setCarNameEvent)="setCarName($event)"></app-autocomplete>
+    </div>
+</div>

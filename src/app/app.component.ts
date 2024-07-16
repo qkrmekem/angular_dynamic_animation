@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterOutlet } from '@angular/router';
 import { ReusableAnimationTestComponent } from './reusable-animation-test/reusable-animation-test.component';
 import { DynamicDimensionComponent } from './dynamic-dimension/dynamic-dimension.component';
+import { AutocompleteParentComponent } from './autocomplete-parent/autocomplete-parent.component';
 
 export const customAnimation = {
   'openClose': trigger('openClose', [
@@ -34,7 +35,12 @@ export const customAnimation = {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ReusableAnimationTestComponent, DynamicDimensionComponent],
+  imports: [
+    RouterOutlet, 
+    ReusableAnimationTestComponent, 
+    DynamicDimensionComponent,
+    AutocompleteParentComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [
